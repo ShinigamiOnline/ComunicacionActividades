@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
-    tools:context="comunicacionentreactividades.comunicacionactividades.MainActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="147dp"
-        android:layout_height="54dp"
-        android:text="Resultado"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="223dp" />
+    tools:context="comunicacionentreactividades.comunicacionactividades.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/textView"
@@ -28,26 +20,38 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txt_nombre"
         android:layout_width="367dp"
         android:layout_height="61dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Verificar"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="67dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="379dp"
+        android:id="@+id/btn_Verificar"
+        android:layout_width="380dp"
         android:layout_height="64dp"
         android:layout_marginLeft="8dp"
         android:text="Verificar"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="136dp" />
+        tools:layout_editor_absoluteY="136dp"
+        android:layout_weight="0.05" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:text="Resultado"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+</LinearLayout>
