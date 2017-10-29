@@ -5,9 +5,9 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
-    tools:context="comunicacionentreactividades.comunicacionactividades.MainActivity"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/textView"
@@ -21,9 +21,10 @@
 
     <EditText
         android:id="@+id/txt_nombre"
-        android:layout_width="374dp"
-        android:layout_height="61dp"
+        android:layout_width="384dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="8dp"
+        android:layout_weight="0.02"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
@@ -33,20 +34,19 @@
 
     <Button
         android:id="@+id/btn_Verificar"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginLeft="8dp"
         android:text="Verificar"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="136dp"
-        android:layout_weight="0.05" />
+        tools:layout_editor_absoluteY="136dp" />
 
     <TextView
 
-        android:id="@+id/textView2"
-        android:layout_width="147dp"
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
         android:text="Resultado"
         android:textColor="@android:color/background_light"
